@@ -1,0 +1,28 @@
+@use 'variaveis';
+
+.hero {
+
+    &__content{
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+            -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+            mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+        }
+
+        &-description {
+            position: absolute;
+            top: 0;
+            left: 27.9%;
+            width: calc(50% - 5.6vw);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}

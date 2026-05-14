@@ -1,0 +1,94 @@
+@use 'hero';
+@use 'variaveis';
+@use 'info';
+@use 'header';
+@use 'compra';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cinzel", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: bold;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextPrincipal;
+}
+
+@mixin title($fontSize: 50px){
+    @include text($fontSize);
+    color: variaveis.$corTextSecundario;
+}
+
+.text--big-revert {
+    @include text(18px);
+    color: variaveis.$corDeFundo;
+    font-weight: 600;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title--big {
+    @include title(55px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(35px);
+}
+
+.text--revert {
+    direction: rtl;
+}
+
+.title--center {
+    text-align: center
+}
+
+.hero__content-description {
+    .text--big {
+        @include text(30px);
+    }
+
+    .title--big {
+        @include title(80px);
+    }
+}
+
+footer {
+    padding: 20px;
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+}

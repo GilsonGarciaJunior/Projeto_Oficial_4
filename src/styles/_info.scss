@@ -1,0 +1,107 @@
+.info {
+    padding: 5.6vw;
+    display: block;
+    
+    img {
+        -webkit-mask-image: 
+            linear-gradient(to bottom, transparent, black 20%, black 80%, transparent),
+            linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+        -webkit-mask-composite: destination-in;
+        mask-image: 
+            linear-gradient(to bottom, transparent, black 20%, black 80%, transparent),
+            linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+        mask-composite: intersect;
+    }
+
+    .info-style {
+        align-items: center;
+
+        &-item {
+            align-items: center;
+            display: flex;
+
+            &-description {
+                margin: 16px;
+            }
+        }
+    }
+    
+    &__container {
+        display: grid;
+        justify-content: center;
+    }
+
+    .text--active {
+        font-size: 70px;
+        border-bottom: 5px solid #c7c7c7;
+    }
+
+    .text--desactive {
+        color: #636262;
+    }
+
+    &__header {
+        padding: 0 500px;
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        text-align: center;
+        align-items: flex-end;
+
+        a {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 50px;
+        }
+    }
+
+    &__movies {
+        display: none;
+
+        h1 {
+            margin-bottom: 24px;
+        }
+
+        img {
+            height: 500px;
+        }
+    }
+
+    &__characters {
+        display: none;
+        align-items: center;
+        padding: 20px;
+
+        &__character {
+            padding: 20px 0;
+            align-items: center;
+            display: flex;
+
+            img {
+                width: 500px;
+            }
+        }
+
+        &__description {
+            margin: 16px;
+
+            h1 {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__World {
+        display: none;
+
+        img {
+            max-width: 100%;
+            width: 700px;
+            max-height: 700px;
+        }
+    }
+
+    .display--active {
+        display: block;
+    }
+}
