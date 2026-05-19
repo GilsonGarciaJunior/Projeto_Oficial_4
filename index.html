@@ -15,107 +15,106 @@
             <img class="header__logo" src="./dist/images/Avatar_Logo.png" alt="Logo Avatar">
             <ul class="header__links">
                 <li class="header__link">
-                    <a class="header__link-text" href="">Inicio</a>
+                    <a class="header__link-text" href="#hero">Inicio</a>
                 </li>
                 <li class="header__link">
-                    <a class="header__link-text" href="">Info</a>
+                    <a class="header__link-text" href="#info">Info</a>
                 </li>
                 <li class="header__link">
-                    <a class="header__link-text" href="">Contato</a>
+                    <a class="header__link-text" href="#compra">Contato</a>
                 </li>
             </ul>
         </div>
     </header>
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero__content">
             <img src="./dist/images/hero_avatar.png" alt="">
             <div class="hero__content-description">
-                <h1 class="title--big">Avatar</h1>
-                <h3 class="text--big">A Franquia de James Cameron</h3>
+                <h1 class="title--big title__media">Avatar</h1>
+                <h3 class="text--big text__media">A Franquia de James Cameron</h3>
             </div>
         </div>
     </section>
-    <section class="info">
+    <section id="info" class="info">
         <div class="info__container">
             <div class="info__header">
-                <a class="title--big text--desactive">Filmes</a>
-                <a class="title--big text--active">Mundo De Pandora</a>
-                <a class="title--big text--desactive">Personagens</a>
+                <button data-section-button="filmes" class="info__select title--big">Filmes</button>
+                <button data-section-button="pandora" class="info__select title--big text--active">Mundo De Pandora</button>
+                <button data-section-button="personagens" class="info__select title--big">Personagens</button>
             </div>
-            <div class="info__World info-style">
+            <div data-section-id="pandora" class="info__World info-style info-style--is-active">
                 <div class="info__World_item info-style-item">
-                    <img src="./dist/images/World__Avatar.png" alt="imagem de Pandora">
+                    <img class="img__media" src="./dist/images/World__Avatar.png" alt="imagem de Pandora">
                     <div class="info__World-Pandora--description info-style-item-description">
-                        <h1 class="title">PANDORA</h1>
-                        <h3 class="text--big">Pandora é uma lua exuberante e perigosa no sistema Alpha Centauri, cenário principal do Franquia Avatar. Habitada pelos Na'vi, uma raça de seres azuis com 3 metros de altura, a lua possui atmosfera tóxica para humanos, flora bioluminescente e um ecossistema interconectado e espiritual. A humanidade a explora em busca do mineral "unobtainium".</h3>
+                        <h1 class="title title__media">PANDORA</h1>
+                        <h3 class="text--big text__media">Pandora é uma lua exuberante e perigosa no sistema Alpha Centauri, cenário principal do Franquia Avatar. Habitada pelos Na'vi, uma raça de seres azuis com 3 metros de altura, a lua possui atmosfera tóxica para humanos, flora bioluminescente e um ecossistema interconectado e espiritual. A humanidade a explora em busca do mineral "unobtainium".</h3>
                     </div>
                 </div>
                 <div class="info__World_item info-style-item">
-                    <div class="info__World_item--description info-style-item-description text--revert">
-                        <h1 class="title">FAUNA</h1>
-                        <h3 class="text--big">A fauna de Pandora,é caracterizada por criaturas hexápodes (seis membros) com bioluminescência, estrutura óssea reforçada com fibra de carbono e dupla visão (olhos primários e infravermelhos). A maioria respira por opérculos, não narinas, e possui antenas neurais para conexão com o ecossistema, incluindo criaturas de destaque como Banshees, Thanators e o mais temido Toruk.</h3>
-                    </div>
-                    <img src="./dist/images/Fauna.png" alt="imagem do filme Avatar">
-                </div>
-                <div class="info__World_item info-style-item">
-                    <img src="./dist/images/Na'vi.jpg" alt="imagem dos Na'vi">
+                    <img class="img__media" src="./dist/images/Fauna.png" alt="imagem do filme Avatar">
                     <div class="info__World_item--description info-style-item-description">
-                        <h1 class="title">NA'VI</h1>
-                        <h3 class="text--big">Os Na'vi são a espécie alienígena humanoide nativa da lua Pandora no filme Avatar. Eles são altos, de pele azul, possuem cauda e orelhas pontiagudas, vivendo em harmonia com a natureza.A cultura Na'vi é espiritual, ligada à divindade Eywa, e eles se diferenciam dos "Avatares" (híbridos humanos) por terem quatro dedos em vez de cinco</h3>
+                        <h1 class="title title__media">FAUNA</h1>
+                        <h3 class="text--big text__media">A fauna de Pandora,é caracterizada por criaturas hexápodes (seis membros) com bioluminescência, estrutura óssea reforçada com fibra de carbono e dupla visão (olhos primários e infravermelhos). A maioria respira por opérculos, não narinas, e possui antenas neurais para conexão com o ecossistema, incluindo criaturas de destaque como Banshees, Thanators e o mais temido Toruk.</h3>
+                    </div>
+                </div>
+                <div class="info__World_item info-style-item">
+                    <img class="img__media" src="./dist/images/Na'vi.jpg" alt="imagem dos Na'vi">
+                    <div class="info__World_item--description info-style-item-description">
+                        <h1 class="title title__media">NA'VI</h1>
+                        <h3 class="text--big text__media">Os Na'vi são a espécie alienígena humanoide nativa da lua Pandora no filme Avatar. Eles são altos, de pele azul, possuem cauda e orelhas pontiagudas, vivendo em harmonia com a natureza.A cultura Na'vi é espiritual, ligada à divindade Eywa, e eles se diferenciam dos "Avatares" (híbridos humanos) por terem quatro dedos em vez de cinco</h3>
                     </div>
                 </div>
             </div>
-            <div class="info__characters info-style  display--active">
+            <div data-section-id="personagens" class="info__characters info-style">
                 <div class="info__characters__character info-style-item">
+                    <img class="img__media" src="./dist/images/Jake_Sully.jpg" alt="Imagem do personagem Jake Sully">
                     <div class="info__characters__description">
-                        <h1 class="title text--revert">Jake Sully</h1>
-                        <h3 class="text--big  text--revert">Jake Sully, interpretado por Sam Worthington, é o protagonista da franquia Avatar. Ex-fuzileiro naval paraplégico, ele é recrutado para o programa Avatar em Pandora, onde opera um corpo Na'vi. Inicialmente com a missão de infiltrar-se, ele se apaixona por Neytiri, abraça a cultura Na'vi, torna-se líder e defende Pandora contra os humanos. </h3>
-                    </div>
-                    <img src="./dist/images/Jake_Sully.jpg" alt="Imagem do personagem Jake Sully">
-                </div>
-                <div class="info__characters__character info-style-item">
-                    <img src="./dist/images/Neytiri.jpg" alt="Imagem da personagem Neytiri">
-                    <div class="info__characters__description">
-                        <h1 class="title">Neytiri</h1>
-                        <h3 class="text--big">Neytiri é a princesa e guerreira do clã Omaticaya em Avatar (2009), interpretada por Zoe Saldaña. Ela se apaixona por Jake Sully, ensinando-lhe os costumes Na'vi. Mãe forte e feroz, luta para proteger sua família e Pandora contra os humanos (RDA). Ela se apaixona por Jake Sully, ensinando-lhe os costumes Na'vi. Mãe forte e feroz, luta para proteger sua família e Pandora contra os humanos (RDA), evoluindo de líder guerreira para uma figura mais complexa e traumatizada em O Caminho da Água. </h3>
+                        <h1 class="title title__media">Jake Sully</h1>
+                        <h3 class="text--big text__media">Jake Sully, interpretado por Sam Worthington, é o protagonista da franquia Avatar. Ex-fuzileiro naval paraplégico, ele é recrutado para o programa Avatar em Pandora, onde opera um corpo Na'vi. Inicialmente com a missão de infiltrar-se, ele se apaixona por Neytiri, abraça a cultura Na'vi, torna-se líder e defende Pandora contra os humanos. </h3>
                     </div>
                 </div>
                 <div class="info__characters__character info-style-item">
+                    <img class="img__media" src="./dist/images/Neytiri.jpg" alt="Imagem da personagem Neytiri">
                     <div class="info__characters__description">
-                        <h1 class="title text--revert">Miles Quaritch</h1>
-                        <h3 class="text--big  text--revert">O Coronel Miles Quaritch, interpretado por Stephen Lang, é o principal antagonista da franquia Avatar de James Cameron. Como chefe de segurança da RDA em Pandora, ele é retratado como um militar brutal, teimoso e destemido. Após sua morte no primeiro filme, ele retorna em Avatar: The Way of Water no corpo de um recombinante (avatar com memórias humanas), mantendo sua postura implacável contra os Na'vi.</h3>
+                        <h1 class="title title__media">Neytiri</h1>
+                        <h3 class="text--big text__media">Neytiri é a princesa e guerreira do clã Omaticaya em Avatar (2009), interpretada por Zoe Saldaña. Ela se apaixona por Jake Sully, ensinando-lhe os costumes Na'vi. Mãe forte e feroz, luta para proteger sua família e Pandora contra os humanos (RDA). Ela se apaixona por Jake Sully, ensinando-lhe os costumes Na'vi. Mãe forte e feroz, luta para proteger sua família e Pandora contra os humanos (RDA), evoluindo de líder guerreira para uma figura mais complexa e traumatizada em O Caminho da Água. </h3>
                     </div>
-                    <img src="./dist/images/quaritch_avatar_3.webp" alt="Imagem do personagem Miles Quaritch">
+                </div>
+                <div class="info__characters__character info-style-item">
+                    <img class="img__media" src="./dist/images/quaritch_avatar_3.webp" alt="Imagem do personagem Miles Quaritch">
+                    <div class="info__characters__description">
+                        <h1 class="title title__media">Miles Quaritch</h1>
+                        <h3 class="text--big text__media">O Coronel Miles Quaritch, interpretado por Stephen Lang, é o principal antagonista da franquia Avatar de James Cameron. Como chefe de segurança da RDA em Pandora, ele é retratado como um militar brutal, teimoso e destemido. Após sua morte no primeiro filme, ele retorna em Avatar: The Way of Water no corpo de um recombinante (avatar com memórias humanas), mantendo sua postura implacável contra os Na'vi.</h3>
+                    </div>
                 </div>
             </div>
-            <div class="info__movies info-style">
+            <div data-section-id="filmes" class="info__movies info-style">
                 <div class="info__movies__movie info-style-item">
-                    <img src="./dist/images/img_Avatar(filme).jpg" alt="imagem do filme Avatar">
+                    <img class="img__media" src="./dist/images/img_Avatar(filme).jpg" alt="imagem do filme Avatar">
                     <div class="info__movies__movie--description">
-                        <h1 class="title">Avatar(Filme)</h1>
-                        <h3 class="text--big">Lançado em 2009 por James Cameron, Avatar é uma obra-prima tecnológica que revolucionou o cinema, tornando-se a maior bilheteria da história. O filme narra a história de Jake Sully, um fuzileiro paraplégico em Pandora, um mundo alienígena exuberante, criado com um nível sem precedentes de computação gráfica e captura de movimento.</h3>
+                        <h1 class="title title__media">Avatar(Filme)</h1>
+                        <h3 class="text--big text__media">Lançado em 2009 por James Cameron, Avatar é uma obra-prima tecnológica que revolucionou o cinema, tornando-se a maior bilheteria da história. O filme narra a história de Jake Sully, um fuzileiro paraplégico em Pandora, um mundo alienígena exuberante, criado com um nível sem precedentes de computação gráfica e captura de movimento.</h3>
                     </div>
                 </div>
                 <div class="info__movies__movie info-style-item">
-                    <div class="info__movies__movie--description text--revert">
-                        <h1 class="title">Avatar:O Caminho da Água</h1>
-                        <h3 class="text--big">"Avatar: O Caminho da Água" (2022) acompanha Jake Sully e Neytiri dez anos após o primeiro filme, agora líderes e pais de cinco filhos (biológicos e adotivos). Quando a corporação humana (RDA) retorna com o coronel Quaritch renascido como avatar, a família foge para o clã litorâneo Metkayina para sobreviver. O filme foca na adaptação ao oceano, o amadurecimento dos filhos e a batalha contra a exploração ecológica de Pandora</h3>
+                    <img class="img__media" src="./dist/images/avatar-o-caminho-da-agua.jpg" alt="imagem do filme Avatar">
+                    <div class="info__movies__movie--description">
+                        <h1 class="title title__media">Avatar:O Caminho da Água</h1>
+                        <h3 class="text--big text__media">"Avatar: O Caminho da Água" (2022) acompanha Jake Sully e Neytiri dez anos após o primeiro filme, agora líderes e pais de cinco filhos (biológicos e adotivos). Quando a corporação humana (RDA) retorna com o coronel Quaritch renascido como avatar, a família foge para o clã litorâneo Metkayina para sobreviver. O filme foca na adaptação ao oceano, o amadurecimento dos filhos e a batalha contra a exploração ecológica de Pandora</h3>
                     </div>
-                    <img src="./dist/images/avatar-o-caminho-da-agua.jpg" alt="imagem do filme Avatar">
                 </div>
                 <div class="info__movies__movie info-style-item">
-                    <img src="./dist/images/img_Avatar_fogo_e_cinzas.webp" alt="imagem do filme Avatar">
+                    <img class="img__media" src="./dist/images/img_Avatar_fogo_e_cinzas.webp" alt="imagem do filme Avatar">
                     <div class="info__movies__movie--description">
-                        <h1 class="title">Avatar:Fogo e Cinzas</h1>
-                        <h3 class="text--big">Avatar: Fogo e Cinzas é mais um capítulo de uma das franquias mais lucrativas do cinema, e o convite da vez é retornar ao mundo mágico de Pandora para acompanhar o desenrolar do confronto entre os Navi (seres humanoides de pele azul e cerca de três metros de altura, nativos do planeta) e o Povo do Céu (a RDA, humanos que visam explorar os recursos naturais de Pandora). Para além dessa guerra interminável, Jake Sully (Sam Worthington), Neytiri (Zoe Saldana) e sua família precisam lidar com a perda de seu filho mais velho e com o surgimento de uma nova ameaça: o Povo das Cinzas, uma tribo Navi extremamente agressiva e violenta, liderada por Varang (Oona Chaplin), uma implacável guerreira movida por sede de sangue.</h3>
+                        <h1 class="title title__media">Avatar:Fogo e Cinzas</h1>
+                        <h3 class="text--big text__media">Avatar: Fogo e Cinzas é mais um capítulo de uma das franquias mais lucrativas do cinema, e o convite da vez é retornar ao mundo mágico de Pandora para acompanhar o desenrolar do confronto entre os Navi (seres humanoides de pele azul e cerca de três metros de altura, nativos do planeta) e o Povo do Céu (a RDA, humanos que visam explorar os recursos naturais de Pandora). Para além dessa guerra interminável, Jake Sully (Sam Worthington), Neytiri (Zoe Saldana) e sua família precisam lidar com a perda de seu filho mais velho e com o surgimento de uma nova ameaça: o Povo das Cinzas, uma tribo Navi extremamente agressiva e violenta, liderada por Varang (Oona Chaplin), uma implacável guerreira movida por sede de sangue.</h3>
                     </div>
                 </div>
             </div>
         </div>
-        
     </section>
     <h1 class="title--big title--center">Filmes em venda</h1>
-    <section class="compra">
+    <section id="compra" class="compra">
         <div class="compra__itens">
             <div class="compra__item">
                 <img src="dist/images/img_Avatar(filme).jpg" alt="imagem do Filme Avatar">
@@ -164,4 +163,5 @@
     </section>
     <footer class="text">Este site é um projeto de fã,Avatar™ é uma marca registrada de Lightstorm Entertainment. Todos os direitos reservados a seus respectivos proprietários.</footer>
 </body>
+<script src="./dist/scripts/js/main.js"></script>
 </html>
