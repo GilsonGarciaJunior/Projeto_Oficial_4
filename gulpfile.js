@@ -3,6 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 
+
 function style() {
     return gulp.src('./src/styles/*.scss')
         .pipe(sass({ outputStyle: 'compressed' }))
