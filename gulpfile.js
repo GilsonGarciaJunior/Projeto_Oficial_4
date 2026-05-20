@@ -21,7 +21,7 @@ function images() {
         .pipe(gulp.dest('./dist/images'))
 }
 
-exports.default = gulp.parallel(images, style);
+exports.default = gulp.parallel(images, style, scripts);
 
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(style));
